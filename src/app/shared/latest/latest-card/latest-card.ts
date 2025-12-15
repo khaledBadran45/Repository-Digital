@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Tag } from "../../tag/tag";
 
 @Component({
@@ -8,5 +8,6 @@ import { Tag } from "../../tag/tag";
   styleUrl: './latest-card.scss',
 })
 export class LatestCard {
+  latest = input.required<{titleng:string,tags:string[],path:string}>();
 
 }

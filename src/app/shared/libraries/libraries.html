@@ -1,11 +1,11 @@
-<section class="services-section px-9 py-8 md:px-18 ">
+<section id="libraries" class="services-section px-9 py-8 md:px-18 ">
     <div class="flex pb-5 justify-between items-center">
         <h2 class="title ">المكتبات الوقفية</h2>
         <app-btn>عرض الكل</app-btn>
     </div>
     <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
-        <app-libraries-card/>
-        <app-libraries-card/>
-        <app-libraries-card/>
+        @for (library of libraries;track $index){
+            <app-libraries-card [library]="library" />
+        }
     </div>
 </section>

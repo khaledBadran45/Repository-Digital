@@ -1,88 +1,50 @@
-<nav class="bg-white shadow-md">
-    <div class="nav-container">
-        <!-- Logo -->
-        <a href="/" class="flex items-center pl-6">
-            <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" />
-        </a>
+<nav class="bg-white ">
+  <div class="nav-container h-full flex items-center">
 
-        <!-- Desktop Menu -->
-        <ul class="hidden md:flex items-center gap-6">
-            <li><a href="/" class="hover:text-blue-600">الرئيسيه</a></li>
-            <li><a href="services" class="hover:text-blue-600">الخدمات</a></li>
-            <li><a href="Repos" class="hover:text-blue-600">تصفح المستودع</a></li>
-            <li><a href="contactUs" class="hover:text-blue-600">تواصل معنا</a></li>
-        </ul>
+    <!-- Logo -->
+    <a href="/" class="flex items-center">
+      <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" />
+    </a>
 
-        <!-- Right icons (Desktop) -->
-        <ul class="hidden ms-auto md:flex items-center gap-8">
-            <li><img src="search.svg" alt="search" class="w-6 h-6" /></li>
-            <li><img src="translation.svg" alt="translation" class="w-6 h-6" /></li>
-            <li><img src="user.svg" alt="user" class="w-6 h-6" /></li>
-        </ul>
-
-        <!-- Mobile Menu Icon -->
-        <div class="pt-3 ms-auto md:hidden ">
-            <button (click)="toggleMobileMenu()">
-                <img src="menu.svg" alt="menu" class="w-10 h-10" />
-            </button>
-        </div>
-    </div>
-
-    <!-- Mobile Menu Dropdown -->
-    @if(mobileMenuOpen){
-    <ul class="md:hidden menu bg-white shadow-md flex flex-col gap-5 pt-4 px-8">
-        <li><a href="/">الرئيسيه</a></li>
-        <li><a href="services">الخدمات</a></li>
-        <li><a href="Repos">تصفح المستودع</a></li>
-        <li><a href="contactUs">تواصل معنا</a></li>
-        <li class="flex gap-4 py-3">
-            <img src="search.svg" alt="search" class="w-6 h-6" />
-            <img src="translation.svg" alt="translation" class="w-6 h-6" />
-            <img src="user.svg" alt="user" class="w-6 h-6" />
-        </li>
+    <!-- Desktop Menu -->
+    <ul class="nav-links hidden md:flex items-center gap-4">
+      <li><a href="/">الرئيسيه</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#libraries">المكتبات الوقفية</a></li>
+      <li><a href="#latest">أحدث الاضافات</a></li>
+      <li><a href="#contactUs">تواصل معنا</a></li>
     </ul>
-    }
+
+    <!-- Desktop Icons -->
+    <ul class="nav-icons hidden md:flex items-center gap-4 ms-auto">
+      <li><img src="search.svg" class="w-6" /></li>
+      <li><img src="translation.svg" class="w-6" /></li>
+      <li><img src="user.svg" class="w-6" /></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button
+      class="md:hidden ms-auto cursor-pointer"
+      (click)="toggleMobileMenu()"
+    >
+      <img src="menu.svg" class="w-10 h-10" />
+    </button>
+  </div>
+
+  <!-- Mobile Menu -->
+  @if (mobileMenuOpen) {
+
+    <ul class="mobile-menu w-full bg-red-500 md:hidden flex flex-col gap-5 px-6 py-4">
+      <li><a href="/">الرئيسيه</a></li>
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#libraries">المكتبات الوقفية</a></li>
+      <li><a href="#contactUs">تواصل معنا</a></li>
+      <li class="flex gap-4 pt-3">
+        <img src="search.svg" class="w-20" />    
+        <img src="translation.svg" class="w-20" />
+        <img src="user.svg" class="w-20" />
+      </li>
+    </ul>
+
+  }
 </nav>
-
-
-<!-- <nav>
-    <div class="nav-container">
-        <div class="gap-6 hidden md:flex col-span-2">
-            <div class="logo">
-                <a href="/">
-                    <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" srcset="">
-                </a>
-            </div>
-            <ul class="nav-list col-span-2 gap-6 justify-start">
-                <li><a href="/">الرئيسيه</a></li>
-                <li><a href="services">الخدمات</a></li>
-                <li><a href="Repos">تصفح المستودع</a></li>
-                <li><a href="contactUs">تواصل معنا</a></li>
-            </ul>
-             <div class="mobile-menu-icon bg-black me-auto">
-                <a href="/">
-                    <img src="menu.svg" alt="logo" class="w-[70px] h-[60px]" srcset="">
-                </a>
-            </div>
-        </div>
-         <div class="flex md:hidden justify-between gap-6 col-span-3">
-            <div class="logo">
-                <a href="/">
-                    <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" srcset="">
-                </a>
-            </div>
-             <div class="mobile-menu-icon">
-                <a href="/">
-                    <img src="menu.svg" alt="logo" class="w-[70px] h-[60px]" srcset="">
-                </a>
-            </div>
-            
-            
-        </div>
-        <ul class="nav-list gap-8 justify-end">
-            <li><img src="search.svg" alt="search" srcset=""></li>
-            <li><img src="translation.svg" alt="translation" srcset=""></li>
-            <li><img src="user.svg" alt="user" srcset=""></li>
-        </ul>
-    </div>
-</nav> -->

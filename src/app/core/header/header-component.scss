@@ -1,27 +1,44 @@
 @reference "tailwindcss";
 
 .nav-container {
-    @apply flex items-center w-full justify-start py-1 px-6 bg-white border-b border-gray-200;
+  @apply w-full px-6 border-b border-gray-200;
 }
 
-.nav-list {
-    @apply flex items-center hidden md:flex
+/* Desktop nav items */
+.nav-links li a,
+.nav-icons li {
+  @apply relative md:px-1 lg:px-2 py-3 font-semibold flex items-center;
 }
 
-ul li a {
-    font-weight: 600;
-      text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 0.25);
+/* Hover background */
+.nav-links li a:hover {
+  background-color: #eff3f3;
 }
-.menu{
-    max-height: 100%;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+
+/* Underline effect */
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 3px;
+  background-color: #d1d5db;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
-/**
-font-family: IBM Plex Sans Arabic;
-font-size: 16px;
-leading-trim: NONE;
-letter-spacing: 0%;
-text-align: right;
-vertical-align: bottom;
-*/
+
+.nav-links li a:hover::after {
+  opacity: 1;
+}
+
+/* Mobile menu */
+.mobile-menu
+{
+  background-color: white;
+  height: 100%;
+  li a {
+    @apply block py-2 font-medium;
+  }
+  }

@@ -9,5 +9,9 @@ import { Btn } from "../btn/btn";
   styleUrl: './libraries.scss',
 })
 export class Libraries {
-
+ libraries:{titleng:string,desc:string}[] = [
+    {titleng:"السيرة النبوية",desc:"نبذه عن سيره الحبيب محمد صلى الله عليه وسلم"},
+    {titleng:"ذيل السيرة النبوية",desc:"اعرف مالا تسع ان تجهل"},
+    {titleng:"السيرة النبوية لابن هشام (الجزء الثاني)",desc:"اقرأ سيره الحبيب محمد صلى الله عليه وسلم لابن هشام "},
+  ];
 }

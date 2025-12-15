@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { Btn } from "../../btn/btn";
 
 @Component({
@@ -8,5 +8,6 @@ import { Btn } from "../../btn/btn";
   styleUrl: './service-card.scss',
 })
 export class ServiceCard {
+  servies = input.required<{titleng:string,desc:string}>();
 
 }
