@@ -1,28 +1,28 @@
-<div class="flex items-center justify-center gap-2 pt-4 ">
+<div class="flex items-center justify-center w-full md:w-[50vw] gap-2 pt-4 ">
     <!-- Input Container -->
-    <div class="flex items-center w-full bg-white rounded-sm shadow-md overflow-hidden">
+    <div class="flex items-center p-1 w-[90%] bg-white rounded-sm shadow-md overflow-hidden">
 
         <!-- Search Icon -->
-        <button class="p-2">
-            <img src="search.svg" alt="mic" class="w-6 h-6" />
+        <button class="icon">
+            <img src="search.svg" alt="mic" />
         </button>
 
         <!-- Input Field -->
         <input type="text" [(ngModel)]="searchQuery" placeholder="البحث في المستودع الرقمي"
-            class="flex-1 px-4 py-2 outline-none" />
+            class="flex-1 px-3 py-1 outline-none" />
 
         <!-- Search Button -->
         <!-- Microphone Icon -->
         @if(searchQuery){
-        <button (click)="cancelSearch()" class="p-2 border-l border-gray-300">
-            <img src="cancle.svg" alt="mic" class="w-6 h-6" />
+        <button (click)="cancelSearch()" class="icon border-l border-gray-300">
+            <img src="cancle.svg" alt="mic" class="" />
         </button>
         }
-        <button class="p-2">
-            <img src="microphone.svg" alt="mic" class="w-6 h-6" />
+        <button class="icon">
+            <img src="microphone.svg" alt="mic" class="" />
         </button>
     </div>
-    <button (click)="onSearch()" class="bg-white hover:bg-gray-300 px-3 py-2 text-md font-bold text-shadow-lg text-gray-700 rounded-sm m-2">
+    <button (click)="onSearch()" class="w-20 bg-white hover:bg-gray-300 px-3 py-2 text-md font-bold text-shadow-lg text-gray-700 rounded-sm m-2">
         بحث
     </button>
 </div>

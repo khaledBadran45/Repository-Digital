@@ -5,6 +5,7 @@
     direction: rtl;
     font-family: "IBM Plex Sans Arabic", sans-serif;
     font-style: normal;
+    box-sizing: border-box;
 }
 
 html {
@@ -31,4 +32,8 @@ html {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
+}
+.custome-container{
+    width: 90%;
+    margin: 0 auto;
 }
