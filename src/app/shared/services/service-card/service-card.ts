@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Btn } from "../../btn/btn";
 
 @Component({
   selector: 'app-service-card',
-  imports: [],
+  imports: [Btn],
   templateUrl: './service-card.html',
   styleUrl: './service-card.scss',
 })
