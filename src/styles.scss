@@ -2,10 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
 * {
-    direction: rtl;
     font-family: "IBM Plex Sans Arabic", sans-serif;
     font-style: normal;
     box-sizing: border-box;
+}
+// body {
+
+//     direction: rtl;
+// }
+[dir="rtl"]{
+      direction: rtl;
+
+}
+[dir="ltr"]{
+      direction: ltr;
 }
 
 html {
