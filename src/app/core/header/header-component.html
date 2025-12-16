@@ -1,7 +1,7 @@
-<nav class="bg-white  custome-container ">
-  <div class="nav-container h-full flex items-center justify-center ">
-    <!-- Logo -->
-    <a href="/" class="flex items-center justify-center pl-">
+<nav class="bg-white relative">
+  <div class="nav-container p-2 custome-container flex items-center justify-center ">
+    <!-- Logo --> 
+    <a href="/" class="flex items-center justify-center pl-2">
       <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" />
     </a>
 
@@ -32,8 +32,7 @@
 
   <!-- Mobile Menu -->
   @if (mobileMenuOpen) {
-
-    <ul class="mobile-menu w-full bg-red-500 md:hidden flex flex-col gap-5 px-6 py-4">
+    <ul class="mobile-menu absolute p-3 bg-white w-full md:hidden flex flex-col gap-5 py-4">
       <li><a href="/">الرئيسيه</a></li>
       <li><a href="#services">الخدمات</a></li>
       <li><a href="#libraries">المكتبات الوقفية</a></li>

@@ -6,44 +6,45 @@
     font-style: normal;
     box-sizing: border-box;
 }
-// body {
 
-//     direction: rtl;
-// }
-[dir="rtl"]{
-      direction: rtl;
-
+[dir="rtl"] {
+    direction: rtl;
 }
-[dir="ltr"]{
-      direction: ltr;
+
+[dir="ltr"] {
+    direction: ltr;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
-.title{
+.title {
     font-size: 30px;
     font-weight: 700;
     color: #161616;
 }
-.subtitle{
+
+.subtitle {
     font-size: 18px;
     font-weight: 700;
     color: #1F2A37;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 }
-.text{
+
+.text {
     font-size: 16px;
     font-weight: 400;
     color: #1F2A37;
 }
-.btn-text{
+
+.btn-text {
     font-size: 16px;
     font-weight: 500;
     cursor: pointer;
 }
-.custome-container{
+
+.custome-container {
     width: 90%;
     margin: 0 auto;
 }
