@@ -1,8 +1,8 @@
 <section id="latest" class="latest-section py-5 ">
     <div class="custome-container">
         <div class="flex pb-5 justify-between items-center">
-            <h2 class="title">أحدث الاضافات</h2>
-            <app-btn>عرض الكل</app-btn>
+            <h2 class="title">{{"LATEST.TITLE" | translate}}</h2>
+            <app-btn>{{"VIEW_ALL" | translate}}</app-btn>
         </div>
         <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
             @for (item of latest; track $index) {

@@ -1,48 +1,47 @@
-<nav class="bg-white relative">
-  <div class="nav-container px-2 custome-container flex items-center justify-center ">
-    <!-- Logo --> 
+<nav class="bg-white w-full fixed top-0 z-50 shadow-md">
+  <div class="nav-container relative px-2 custome-container flex items-center justify-center ">
+    <!-- Logo -->
     <a href="/" class="flex items-center justify-center pl-2">
       <img src="logo.png" alt="logo" class="w-[70px] h-[60px]" />
     </a>
 
     <!-- Desktop Menu -->
     <ul class="nav-links hidden md:flex items-center gap-4">
-      <li><a href="/">الرئيسيه</a></li>
-      <li><a href="#services">الخدمات</a></li>
-      <li><a href="#libraries">المكتبات الوقفية</a></li>
-      <li><a href="#latest">أحدث الاضافات</a></li>
-      <li><a href="#contactUs">تواصل معنا</a></li>
+      <li><a href="#">{{"NAV.HOME" |translate}}</a></li>
+      <li><a href="#services">{{"NAV.SERVICES"|translate}}</a></li>
+      <li><a href="#libraries">{{"NAV.LIBRARIES"|translate}}</a></li>
+      <li><a href="#latest">{{"NAV.LATEST"|translate}}</a></li>
+      <li><a href="#contactUs">{{"NAV.CONTACT_US"|translate}}</a></li>
     </ul>
-    
+
     <!-- Desktop Icons -->
     <ul class="nav-icons hidden md:flex items-center gap-4 ms-auto">
+      <a (click)="changeLang()">
+        <li><img src="translation.svg" class="w-6" /></li>
+      </a>
       <li><img src="search.svg" class="w-6" /></li>
-      <li><img src="translation.svg" class="w-6" /></li>
       <li><img src="user.svg" class="w-6" /></li>
     </ul>
 
     <!-- Mobile Button -->
-    <button
-      class="md:hidden ms-auto cursor-pointer"
-      (click)="toggleMobileMenu()"
-    >
+    <button class="md:hidden ms-auto cursor-pointer" (click)="toggleMobileMenu()">
       <img src="menu.svg" class="w-10 h-10" />
     </button>
   </div>
 
   <!-- Mobile Menu -->
   @if (mobileMenuOpen) {
-    <ul class="mobile-menu absolute p-3 bg-white w-full md:hidden flex flex-col gap-5 py-4">
-      <li><a href="/">الرئيسيه</a></li>
-      <li><a href="#services">الخدمات</a></li>
-      <li><a href="#libraries">المكتبات الوقفية</a></li>
-      <li><a href="#contactUs">تواصل معنا</a></li>
-      <li class="flex gap-4 pt-3">
-        <img src="search.svg" class="w-6" />    
-        <img src="translation.svg" class="w-6" />
-        <img src="user.svg" class="w-6" />
-      </li>
-    </ul>
-
+  <ul class="mobile-menu absolute p-3 bg-white w-full md:hidden flex flex-col gap-5 py-4">
+    <li><a href="#">{{"NAV.HOME" |translate}}</a></li>
+    <li><a href="#services">{{"NAV.SERVICES"|translate}}</a></li>
+    <li><a href="#libraries">{{"NAV.LIBRARIES"|translate}}</a></li>
+    <li><a href="#latest">{{"NAV.LATEST"|translate}}</a></li>
+    <li><a href="#contactUs">{{"NAV.CONTACT_US"|translate}}</a></li>
+    <li class="flex gap-4 pt-3">
+      <img src="search.svg" class="w-6" />
+      <img src="translation.svg" class="w-6" />
+      <img src="user.svg" class="w-6" />
+    </li>
+  </ul>
   }
 </nav>

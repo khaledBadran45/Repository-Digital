@@ -1,0 +1,35 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "SERVICES":"Services",
+    "LIBRARIES":"Endowment libraries",
+    "LATEST":"Latest additions",
+    "CONTACT_US":"Contact us"
+  },
+  "HERO":{
+    "TITLE": "Digital Repository",
+    "DESCRIPTION": "The Digital Repository is a platform that provides a secure and efficient way to store and manage digital documents.",
+    "SEARCH_PLACEHOLDER":"Search in the repository...",
+    "SEARCH_BTN":"Search"
+  },
+  "SERVICES":{
+    "TITLE":"Services"
+  },
+  "LIBRARIES":{
+    "TITLE":"Endowment libraries"
+  },
+  "VIEW_ALL":"View All",
+  "LATEST":{
+    "TITLE":"Latest additions"
+  },
+  "lastEditDate":"Last edit date: 19/03/2025 - 4:13 PM KSA time",
+
+  "CONTACT_US":{
+    "TITLE":"Contact us",
+    "DESCRIPTION":"If you have any questions or need further information, please feel free to reach out to us.",
+    "EMAIL_LABEL":"Email",
+    "MESSAGE_LABEL":"Message",
+    "SEND_BTN":"Send"
+  }
+
+}

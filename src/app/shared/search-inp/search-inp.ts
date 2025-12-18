@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { TranslatePipe } from '@ngx-translate/core';
 @Component({
   selector: 'app-search-inp',
-  imports: [FormsModule],
+  imports: [FormsModule,TranslatePipe],
   templateUrl: './search-inp.html',
   styleUrl: './search-inp.scss',
 })

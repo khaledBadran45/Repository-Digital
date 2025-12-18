@@ -1,4 +1,6 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
+import { LibrariesModel } from '../libraries.model';
+import { LocalizationService } from '../../../localization';
 
 @Component({
   selector: 'app-libraries-card',
@@ -7,6 +9,10 @@ import { Component, input } from '@angular/core';
   styleUrl: './libraries-card.scss',
 })
 export class LibrariesCard {
-  library = input.required<{titleng:string,desc:string}>();
+  library = input.required<LibrariesModel>();
+  localization =  inject(LocalizationService);
+  lang(){
+   return this.localization.lang()
+  }
 
 }

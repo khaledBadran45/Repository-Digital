@@ -8,7 +8,7 @@
         </button>
 
         <!-- Input Field -->
-        <input type="text" [(ngModel)]="searchQuery" placeholder="البحث في المستودع الرقمي"
+        <input type="text" [(ngModel)]="searchQuery" [placeholder]="'HERO.SEARCH_PLACEHOLDER' | translate"
             class="flex-1 px-3 py-1 outline-none" />
 
         <!-- Search Button -->
@@ -22,7 +22,8 @@
             <img src="microphone.svg" alt="mic" class="" />
         </button>
     </div>
-    <button (click)="onSearch()" class="w-20 bg-white hover:bg-gray-300 px-3 py-2 text-md font-bold text-shadow-lg text-gray-700 rounded-sm m-2">
-        بحث
+    <button (click)="onSearch()"
+        class="w-20 bg-white hover:bg-gray-300 px-3 py-2 text-md font-bold text-shadow-lg text-gray-700 rounded-sm m-2">
+        {{'HERO.SEARCH_BTN' | translate}}
     </button>
 </div>

@@ -5,9 +5,9 @@
         </div>
     </div>
     <div class="content mt-4">
-        <h3 class="subtitle my-2">{{latest().titleng}}</h3>
+        <h3 class="subtitle my-2">{{latest().title[lang()]}}</h3>
         <div class="tags-container gap-5">
-            @for (tag of latest().tags; track $index) {
+            @for (tag of latest().tags[lang()]; track $index) {
                 <app-tag>{{tag}}</app-tag>
             }
         </div>

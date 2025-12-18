@@ -1,5 +1,7 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { Tag } from "../../tag/tag";
+import { LatestModel } from '../latest.model';
+import { LocalizationService } from '../../../localization';
 
 @Component({
   selector: 'app-latest-card',
@@ -8,6 +10,10 @@ import { Tag } from "../../tag/tag";
   styleUrl: './latest-card.scss',
 })
 export class LatestCard {
-  latest = input.required<{titleng:string,tags:string[],path:string}>();
+  latest = input.required<LatestModel>();
+  localization = inject(LocalizationService);
+  lang(){
+   return this.localization.lang()
+  }
 
 }
