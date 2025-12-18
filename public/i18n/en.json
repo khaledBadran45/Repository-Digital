@@ -13,7 +13,9 @@
     "SEARCH_BTN":"Search"
   },
   "SERVICES":{
-    "TITLE":"Services"
+    "TITLE":"Services",
+    "DetailsBtn":"Services Details",
+    "RequestBtn":"Service request"
   },
   "LIBRARIES":{
     "TITLE":"Endowment libraries"
@@ -23,7 +25,7 @@
     "TITLE":"Latest additions"
   },
   "lastEditDate":"Last edit date: 19/03/2025 - 4:13 PM KSA time",
-
+  "Display":"Display",
   "CONTACT_US":{
     "TITLE":"Contact us",
     "DESCRIPTION":"If you have any questions or need further information, please feel free to reach out to us.",

@@ -13,14 +13,17 @@
     "SEARCH_BTN":"بحث"
   },
   "SERVICES":{
-    "TITLE":"خدماتنا"
+    "TITLE":"خدماتنا",
+    "DetailsBtn":"تفاصيل الخدمه",
+    "RequestBtn":"طلب الخدمه"
   },
-  "LiBRARIES":{
+  "LIBRARIES":{
     "TITLE":"المكتبات الوقفيه"
   },
   "VIEW_ALL":"عرض الكل",
   "LATEST":{
     "TITLE":"أحدث الإضافات"
   },
+  "Display":"استعراض",  
   "lastEditDate":"تاريخ آخر تعديل: 19/03/2025 - 4:13 م بتوقيت السعودية"
 }
