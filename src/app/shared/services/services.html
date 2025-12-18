@@ -1,8 +1,10 @@
-<section id="services" class="services-section   py-5 custome-container ">
-    <h2 class="title pb-5">الخدمات</h2>
-    <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
-        @for (item of services; track $index) {
+<section id="services" class="services-section py-5  ">
+    <div class="custome-container">
+        <h2 class="title pb-5">الخدمات</h2>
+        <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
+            @for (item of services; track $index) {
             <app-service-card [servies]="item" />
-        }
+            }
+        </div>
     </div>
 </section>

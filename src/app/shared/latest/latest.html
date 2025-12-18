@@ -1,11 +1,13 @@
-<section id="latest" class="latest-section   py-5 custome-container ">
-    <div class="flex pb-5 justify-between items-center">
-        <h2 class="title">أحدث الاضافات</h2>
-        <app-btn>عرض الكل</app-btn>
-    </div>
-    <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
-        @for (item of latest; track $index) {
+<section id="latest" class="latest-section py-5 ">
+    <div class="custome-container">
+        <div class="flex pb-5 justify-between items-center">
+            <h2 class="title">أحدث الاضافات</h2>
+            <app-btn>عرض الكل</app-btn>
+        </div>
+        <div class="gap-5 pl-2 md:grid-cols-2 lg:grid-cols-3 grid">
+            @for (item of latest; track $index) {
             <app-latest-card [latest]="item" />
-        }
+            }
+        </div>
     </div>
 </section>
